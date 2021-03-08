@@ -12,6 +12,8 @@ class TestCase(unittest.TestCase):
         #1900: divisible by 4 and 100 but not by 400
         self.assertEqual(leapyear.IsLeapYear(1900), 'NO')
 
+        #2000: divisible by 4, 100 and 400
+        self.assertEqual(leapyear.IsLeapYear(2000), 'YES')
         
 if __name__ == '__main__':
     unittest.main()

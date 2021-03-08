@@ -6,6 +6,8 @@ class TestCase(unittest.TestCase):
         for num in range (1,100):
             if num % 3 ==0:
                 self.assertEqual(fizzbuzz.fizzbuzz(num), 'Fizz')
+            elif num % 5 ==0:
+                self.assertEqual(fizzbuzz.fizzbuzz(num), 'Buzz')
             
             else:
                 self.assertEqual(fizzbuzz.fizzbuzz(num), num)

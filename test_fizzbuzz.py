@@ -8,7 +8,8 @@ class TestCase(unittest.TestCase):
                 self.assertEqual(fizzbuzz.fizzbuzz(num), 'Fizz')
             elif num % 5 ==0:
                 self.assertEqual(fizzbuzz.fizzbuzz(num), 'Buzz')
-            
+            elif num % 3 == 0 and num % 5 == 0:
+                self.assertEqual(fizzbuzz.fizzbuzz(num),'FizzBuzz')
             else:
                 self.assertEqual(fizzbuzz.fizzbuzz(num), num)
 
